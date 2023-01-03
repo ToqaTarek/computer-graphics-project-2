@@ -7,8 +7,6 @@
 #include<mmsystem.h>
 double rotate_x = 0;
 double rotate_y = 0;
-double r_y = 0;
-double r_x = 0;
 double x_position = 0;
 double z_position = 0;
 float xRotated = 90.0, yRotated = 0.0, zRotated = 0.0;
