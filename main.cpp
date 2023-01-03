@@ -640,7 +640,6 @@ void reshapeFunc (int w, int h)
 
 //----------------------------------  main  ------------------------------------
 
-
 int main (int argc, char **argv)
 {
     glutInit(&argc, argv);
