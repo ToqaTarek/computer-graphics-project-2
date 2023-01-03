@@ -482,7 +482,7 @@ void triangle1(){
 }
 void triangle2(){
       glTranslatef(1,-3, -19);
-      glBegin(GL_TRIANGLES);           // Begin drawing the pyramid with 4 triangles
+      glBegin(GL_TRIANGLES); 
       // Front
       glColor3f(1.0f, 0.0f, 0.0f);     // Red
       glVertex3f( 0.0f, 1.0f, 0.0f);
@@ -502,7 +502,7 @@ void triangle2(){
 }
 void triangle3(){
       glTranslatef(3,-3, -20);
-      glBegin(GL_TRIANGLES);           // Begin drawing the pyramid with 4 triangles
+      glBegin(GL_TRIANGLES);
       // Front
       glColor3f(1.0f, 0.0f, 0.0f);     // Red
       glVertex3f( 0.0f, 1.0f, 0.0f);
