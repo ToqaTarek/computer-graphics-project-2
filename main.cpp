@@ -385,17 +385,6 @@ void car(){
     glEnd();
     glPopMatrix();
 
-
- /*     glPushMatrix();
-    glBegin(GL_POLYGON);
-    glColor3ub(22, 28, 35);
-    glVertex3f(-13, -6, -7);
-    glVertex3f(-16, -5, -7);
-    glVertex3f(-16, -5, -9);
-    glVertex3f(-13, -6, -9);
-    glEnd();
-    glPopMatrix();*/
-
     glPushMatrix ();//car wheel_1
     glColor3f (0, 0, 1);
     glTranslatef(-20, -8, -9);
