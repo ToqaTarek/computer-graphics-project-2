@@ -416,12 +416,9 @@ void car(){
     glPopMatrix();
 
 
-    /* glVertex3f(-15, -8, -9);
-    glVertex3f(-15, -5, -9);
-    glVertex3f(-20, -5, -9);
-    glVertex3f(-20, -8, -9);
 
-    glVertex3f(-12, -8, -9);
+
+ /*    glVertex3f(-12, -8, -9);
     glVertex3f(-12, -6, -9);
     glVertex3f(-15, -6, -9);
     glVertex3f(-15, -8, -9);
