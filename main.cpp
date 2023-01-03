@@ -229,18 +229,7 @@ void home2(){
     glVertex3f(-20, -6, -15);
     glEnd();
     glPopMatrix();
-
-
-    /*glPushMatrix();
-    glBegin(GL_POLYGON);//window
-    glColor3f(0, 0, 0);
-    glVertex3f(-13, 4, -15);
-    glVertex3f(-13, 2, -15);
-    glVertex3f(-15, 2, -14);
-    glVertex3f(-15, 4, -15);
-    glEnd();
-    glPopMatrix();*/
-    }
+}
 
 void car(){
     //in the middle
