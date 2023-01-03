@@ -105,15 +105,6 @@ void background(){
     glVertex3f(-25,-20,-18);
     glEnd();
     glPopMatrix();
-
-  /*  glBegin(GL_QUADS);//white lines
-    glColor3ub(0, 0, 0);
-    glVertex3f(-25,-10,-14);
-    glVertex3f(-20,-10,-14);
-    glEnd();
-    //glVertex3f(-8,-8,-17);
-    //glVertex3f(-25,-20,-17);
-    glPopMatrix();*/
 }
 
 void home1(){
