@@ -376,16 +376,6 @@ void car(){
     glVertex3f(-22, -6, -10);
     glVertex3f(-22, -8, -10);
     glVertex3f(-22, -8, -9);
-
-
-
-       // glVertex3f(-22, -8, -10);
-        //glVertex3f(-22, -6, -10);
-       // glVertex3f(-22, -6, -9);
-       // glVertex3f(-22, -8, -9);
-
-
-
     glEnd();
     glPopMatrix();
 
@@ -433,7 +423,7 @@ void triangle1(){
       glVertex3f(1.0f, -1.0f, 1.0f);
       glColor3f(0.0f, 1.0f, 0.0f);     // Green
       glVertex3f(1.0f, -1.0f, -1.0f);
-   glEnd();
+      glEnd();
 }
 void triangle2(){
       glTranslatef(1,-3, -19);
@@ -453,7 +443,7 @@ void triangle2(){
       glVertex3f(1.0f, -1.0f, 1.0f);
       glColor3f(0.0f, 1.0f, 0.0f);     // Green
       glVertex3f(1.0f, -1.0f, -1.0f);
-   glEnd();
+      glEnd();
 }
 void triangle3(){
       glTranslatef(3,-3, -20);
@@ -473,7 +463,7 @@ void triangle3(){
       glVertex3f(1.0f, -1.0f, 1.0f);
       glColor3f(0.0f, 1.0f, 0.0f);     // Green
       glVertex3f(1.0f, -1.0f, -1.0f);
-   glEnd();
+      glEnd();
 }
 void ball(){
     glTranslatef(t-7, m, z_position);
@@ -537,7 +527,6 @@ void display (void)
 
     glutSwapBuffers();
     glutPostRedisplay();
-
 }
 void keyb(unsigned char key, int x, int y)
 {
@@ -681,3 +670,4 @@ int main (int argc, char **argv)
     sndPlaySound("wind-howl.wav" ,SND_ASYNC);
     glutMainLoop();
 }
+
