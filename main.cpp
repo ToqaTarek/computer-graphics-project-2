@@ -44,7 +44,7 @@ for(int a= 0; a < 8; a++){
         makeTree(height,base);
         glPopMatrix();
 }}}
-
+//moon
 void moon(){
     glColor3f(1.0, 1.0, 1.0);
     glPushMatrix();
@@ -54,7 +54,7 @@ void moon(){
     glutSolidSphere(1.0, 40, 30);
     glPopMatrix();
 }
-
+//trees
 void trees(){
     glPushMatrix();
     glTranslatef(-25, -4, -16);
@@ -72,6 +72,7 @@ void trees(){
     glCallList(makeaTree);
     glPopMatrix();
 }
+//background
 void background(){
     glBegin(GL_QUADS);//the sky
     glColor3ub(26, 0, 124 );
@@ -109,7 +110,7 @@ void background(){
     glEnd();
     glPopMatrix();
 }
-
+//home 1
 void home1(){
     glPushMatrix();//back
     glBegin(GL_POLYGON);
@@ -171,7 +172,7 @@ void home1(){
     glEnd();
     glPopMatrix();
 }
-
+//home 2
 void home2(){
     glPushMatrix();//back
     glBegin(GL_POLYGON);
@@ -233,7 +234,7 @@ void home2(){
     glEnd();
     glPopMatrix();
 }
-
+//car
 void car(){
     //in the middle
     glPushMatrix();//back
@@ -371,7 +372,6 @@ void car(){
     glPushMatrix();
     glBegin(GL_POLYGON);//left
     glColor3ub(153, 21, 21);
-    //glColor3ub(1, 1, 1);
     glVertex3f(-22, -6, -9);
     glVertex3f(-22, -6, -10);
     glVertex3f(-22, -8, -10);
@@ -405,6 +405,7 @@ void car(){
     glutSolidSphere(1.0, 10, 30);
     glPopMatrix();
 }
+//pyramids
 void triangle1(){
       glTranslatef(-1,-3, -18);
       glBegin(GL_TRIANGLES);
@@ -421,7 +422,7 @@ void triangle1(){
       glVertex3f(0.0f, 1.0f, 0.0f);
       glColor3f(0.0f, 0.0f, 1.0f);// Blue
       glVertex3f(1.0f, -1.0f, 1.0f);
-      glColor3f(0.0f, 1.0f, 0.0f);     // Green
+      glColor3f(0.0f, 1.0f, 0.0f);// Green
       glVertex3f(1.0f, -1.0f, -1.0f);
       glEnd();
 }
@@ -429,19 +430,19 @@ void triangle2(){
       glTranslatef(1,-3, -19);
       glBegin(GL_TRIANGLES);
       // Front
-      glColor3f(1.0f, 0.0f, 0.0f);     // Red
+      glColor3f(1.0f, 0.0f, 0.0f);// Red
       glVertex3f( 0.0f, 1.0f, 0.0f);
-      glColor3f(0.0f, 1.0f, 0.0f);     // Green
+      glColor3f(0.0f, 1.0f, 0.0f);// Green
       glVertex3f(-1.0f, -1.0f, 1.0f);
-      glColor3f(0.0f, 0.0f, 1.0f);     // Blue
+      glColor3f(0.0f, 0.0f, 1.0f);// Blue
       glVertex3f(1.0f, -1.0f, 1.0f);
 
       // Right
-      glColor3f(1.0f, 0.0f, 0.0f);     // Red
+      glColor3f(1.0f, 0.0f, 0.0f);// Red
       glVertex3f(0.0f, 1.0f, 0.0f);
-      glColor3f(0.0f, 0.0f, 1.0f);     // Blue
+      glColor3f(0.0f, 0.0f, 1.0f);// Blue
       glVertex3f(1.0f, -1.0f, 1.0f);
-      glColor3f(0.0f, 1.0f, 0.0f);     // Green
+      glColor3f(0.0f, 1.0f, 0.0f);// Green
       glVertex3f(1.0f, -1.0f, -1.0f);
       glEnd();
 }
@@ -449,22 +450,23 @@ void triangle3(){
       glTranslatef(3,-3, -20);
       glBegin(GL_TRIANGLES);
       // Front
-      glColor3f(1.0f, 0.0f, 0.0f);     // Red
+      glColor3f(1.0f, 0.0f, 0.0f);// Red
       glVertex3f( 0.0f, 1.0f, 0.0f);
-      glColor3f(0.0f, 1.0f, 0.0f);     // Green
+      glColor3f(0.0f, 1.0f, 0.0f);// Green
       glVertex3f(-1.0f, -1.0f, 1.0f);
-      glColor3f(0.0f, 0.0f, 1.0f);     // Blue
+      glColor3f(0.0f, 0.0f, 1.0f);// Blue
       glVertex3f(1.0f, -1.0f, 1.0f);
 
       // Right
-      glColor3f(1.0f, 0.0f, 0.0f);     // Red
+      glColor3f(1.0f, 0.0f, 0.0f);// Red
       glVertex3f(0.0f, 1.0f, 0.0f);
-      glColor3f(0.0f, 0.0f, 1.0f);     // Blue
+      glColor3f(0.0f, 0.0f, 1.0f);// Blue
       glVertex3f(1.0f, -1.0f, 1.0f);
-      glColor3f(0.0f, 1.0f, 0.0f);     // Green
+      glColor3f(0.0f, 1.0f, 0.0f);// Green
       glVertex3f(1.0f, -1.0f, -1.0f);
       glEnd();
 }
+//ball
 void ball(){
     glTranslatef(t-7, m, z_position);
     glPushMatrix();
@@ -478,7 +480,6 @@ void ball(){
 
 void display (void)
 {
-
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
     glTranslatef(0.0, 0.0, -15.0);
@@ -670,4 +671,3 @@ int main (int argc, char **argv)
     sndPlaySound("wind-howl.wav" ,SND_ASYNC);
     glutMainLoop();
 }
-
