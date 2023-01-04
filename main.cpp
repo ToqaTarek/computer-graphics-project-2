@@ -4,7 +4,10 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <math.h>
-#include<mmsystem.h>
+#include<MMSystem.h>
+#include <iostream>
+using namespace std;
+
 double rotate_x = 0;
 double rotate_y = 0;
 double x_position = 0;
@@ -48,7 +51,7 @@ void moon(){
     glTranslatef(8, 5, 0);
     glRotatef(60.0, 1, 0, 0);
     glRotatef(zRotated, 0, 0, 1);
-    glutSolidSphere(1.0, 50, 30);
+    glutSolidSphere(1.0, 40, 30);
     glPopMatrix();
 }
 
@@ -368,10 +371,21 @@ void car(){
     glPushMatrix();
     glBegin(GL_POLYGON);//left
     glColor3ub(153, 21, 21);
-    glVertex3f(-22, -8, -10);
-    glVertex3f(-22, -6, -10);
+    //glColor3ub(1, 1, 1);
     glVertex3f(-22, -6, -9);
+    glVertex3f(-22, -6, -10);
+    glVertex3f(-22, -8, -10);
     glVertex3f(-22, -8, -9);
+
+
+
+       // glVertex3f(-22, -8, -10);
+        //glVertex3f(-22, -6, -10);
+       // glVertex3f(-22, -6, -9);
+       // glVertex3f(-22, -8, -9);
+
+
+
     glEnd();
     glPopMatrix();
 
@@ -423,7 +437,7 @@ void triangle1(){
 }
 void triangle2(){
       glTranslatef(1,-3, -19);
-      glBegin(GL_TRIANGLES); 
+      glBegin(GL_TRIANGLES);
       // Front
       glColor3f(1.0f, 0.0f, 0.0f);     // Red
       glVertex3f( 0.0f, 1.0f, 0.0f);
@@ -664,5 +678,6 @@ int main (int argc, char **argv)
     glutKeyboardFunc(keyb);
     glutTimerFunc(0,timer,0);
     texture();
+    sndPlaySound("wind-howl.wav" ,SND_ASYNC);
     glutMainLoop();
 }
